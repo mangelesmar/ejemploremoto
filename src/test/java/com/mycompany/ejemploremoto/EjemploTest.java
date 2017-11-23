@@ -5,6 +5,7 @@
  */
 package com.mycompany.ejemploremoto;
 
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -37,11 +38,15 @@ public class EjemploTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
+/*
+    Como un usuario, quiero poder añadir una película
+	a mi lista de películas
+*/
      @Test
-     public void hello() {
-         assertTrue(1 == 1);
+     public void annadirPeliculaTest() {
+         Usuario u = new Usuario();
+         Pelicula p = new Pelicula();
+         List<Pelicula> l = u.listaPeliculas();
+         l.add(p);
      }
 }
