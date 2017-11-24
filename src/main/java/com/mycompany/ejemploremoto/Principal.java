@@ -18,6 +18,7 @@ public class Principal {
         // TODO code application logic here
         System.out.println("Inicio");
         System.out.println("Inicio2");
+        System.out.println("Inicio3");
     }
     
 }
